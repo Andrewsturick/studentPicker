@@ -1,0 +1,65 @@
+
+​
+var a = [1,2,3,4,5,6,7,8,9];
+// var b = a.concat();
+​
+​
+// b.sort();
+​
+// console.log('a',a);
+// console.log('b',b);
+​
+//how to open sublime side bar?
+//map returns new array
+
+​
+ //--------get number between maybe 0 and 100------
+// Math.floor(Math.random()*100);  find numbers between 0 and 99!
+​
+function sample (array) {
+  var index = Math.floor(Math.random()*array.length);
+  return array[index];
+}
+​
+​
+​
+​
+// code to shuffle an array given a length
+​
+function shuffle (array) {
+  // how does splice work
+  // array.splice(index,numToremove[,stuff to insert]
+  array = array.concat();
+  var shuffled =[];
+
+  while(array.length){
+      var index = Math.floor(Math.random()* array.length);
+      var randomSplice = array.splice(index,1);
+      shuffled = shuffled.concat(randomSplice);
+  }
+  return shuffled;
+}
+​
+​
+//put items into two arrays and leave one outlier
+​
+function chunk (array, size) {
+  size = Math.abs(size) || 2; //if size == 0 , be 2 !
+  array = array.concat();
+
+  var teams = [];
+  while(array.length){
+​
+      var team = [];
+      for(var i = 0; i < size && array.length; i++){
+        team.push(array.shift());
+      }
+​
+      teams.push(team);
+    }
+    return teams;
+}
+​
+​
+​
+console.log(chunk(shuffle(a) , 3));

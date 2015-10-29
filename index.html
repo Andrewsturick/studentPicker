@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <title>Student Picker</title>
+</head>
+<body>
+  <header>
+       <img src="http://codinghouse.co/images/logo.png" alt="">
+  </header>
+  <h1>Student Picker</h1>
+  <div id="addNameContainer">
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName">
+      <button id="addButton">Add</button>
+      <div id="divForNames"></div>
+  </div>
+  <div id="pickOneRandom-container">
+      <label for="pickOneRandom">Pick a Random Student!</label>
+      <button id="pickOneRandom"> Submit</button>
+      <div id="randomGoesHere"></div>
+  </div>
+  <div id="pairsMaker">
+      <label for="pairsMakerButton">Make Pairs!</label>
+      <button id="pairsMakerButton">Submit</button>
+      <div id="pairHolder">
+      </div>
+  </div>
+  <div id="youPickSize">
+      <p><label id="sizeLabel" for="sizePicker">Want a custom group size? No Problem...Just input a group size!</label>
+        <input id="customNumberInput" type="text"></p>
+      <br>
+      <button id="sizePicker">Submit</button>
+      <div id="customGroupHolder"></div>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>

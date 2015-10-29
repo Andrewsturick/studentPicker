@@ -1,0 +1,35 @@
+body{
+  background-color: #2b46cf;
+  color:white;
+}
+
+h1{
+  text-align: center;
+  color:white;
+  font-weight: bold;
+}
+img{width:100px;
+height:50px;}
+#addNameContainer{
+  text-align:center;
+}
+
+#pickOneRandom-container{
+  margin-top:50px;
+text-align:center;
+}
+#youPickSize{
+margin-top:50px;
+
+}
+#pairsMaker{
+text-align:center;
+margin-top:50px;
+}
+#sizeLabel {
+  margin-top: 250px;
+  padding-left: 25%;
+}
+#sizePicker{
+  margin-left:49%;
+}
